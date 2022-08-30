@@ -1,0 +1,24 @@
+.pageNotFoundContainer {
+    background-color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageNotFoundContainer > img {
+    margin-top: 10vmax;
+    width: 20vmax;
+    height: 20vmax;
+}
+
+.pageNotFoundContainer > a {
+    margin-top: 4vmax;
+    color: white;
+    padding: 1vmax 20vmax;
+    background: #00c4ff;
+    border-radius: 1vmax;
+    text-decoration: none;
+    font: 400 2vmax "Lobster";
+}

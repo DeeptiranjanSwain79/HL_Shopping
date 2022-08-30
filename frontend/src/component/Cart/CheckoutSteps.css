@@ -1,0 +1,12 @@
+.MuiStepConnector-line {
+    display: none !important;
+}
+
+.MuiStepper-root {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.MuiStepper-active,
+.MuiStepper-completed {
+    background-color: #1ff7d0;
+}

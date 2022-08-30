@@ -1,0 +1,64 @@
+.CartItemCard{
+    display: flex;
+    padding: 1vmax;
+    height: 10vmax;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.CartItemCard img{
+    width: 8vmax;
+    height: 6vmax;
+}
+
+.CartItemCard div{
+    display: flex;
+    flex-direction: column;
+    margin: 0.3vmax 1vmax;
+}
+
+.CartItemCard div a{
+    font: 300 0.9vmax cursive;
+    color: rgba(24, 24, 24, 0.815);
+    text-decoration: none;
+}
+
+.CartItemCard div span{
+    font: 300 0.9vmax "Poppins";
+    color: rgba(24, 24, 24, 0.815);
+}
+
+.CartItemCard div p{
+    font: 300 1.2vmax "Tiro Tamil";
+    color: tomato;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .CartItemCard{
+        padding: 3vmax;
+        height: 25vmax;
+    } 
+
+    .CartItemCard img{
+        width: 10vmax;
+    }
+
+    .CartItemCard div{
+        margin: 1vmax 2vmax;
+    }
+
+    .CartItemCard div a{
+        font: 300 2vmax cursive;
+    }
+
+    .CartItemCard div span{
+        font: 300 1.9vmax "Tiro Tamil";
+    }
+    
+
+    .CartItemCard div p{
+        font: 300 1.9vmax "Tiro Tamil";
+    }
+
+}

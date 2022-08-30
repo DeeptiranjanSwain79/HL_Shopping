@@ -1,0 +1,139 @@
+.newProductContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(221, 221, 221);
+    border-left: 1px solid rgba(0, 0, 0, 0.158);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.newProductContainer h1 {
+    color: rgba(0, 0, 0, 0.733);
+    font: 300 2rem "Tiro Tamil";
+    text-align: center;
+}
+
+.createProductForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 2vmax;
+    height: 100%;
+    transition: all 0.5s;
+    width: 80vh;
+    background-color: white;
+    box-shadow: 00 10px rgba(0, 0, 0, 0.267);
+}
+
+.createProductForm>div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.createProductForm>div>input,
+.createProductForm>div>textarea,
+.createProductForm>div>select {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 5px;
+    font: 300 1.1vmax cursive;
+    outline: none;
+}
+
+.createProductForm>div>svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.8vmax;
+    color: rgba(0, 0, 0, 0.548);
+}
+
+#createProductFormImage>img {
+    width: 5vmax;
+    margin: 0.05vmax;
+}
+
+#createProductFormImage>input {
+    display: flex;
+    padding: 0%;
+}
+
+#createProductFormImage {
+    width: 100%;
+    overflow: auto;
+}
+
+#createProductFormImage>input::file-selector-button {
+    cursor: pointer;
+    height: 5vh;
+    width: 100%;
+    z-index: 2;
+    border: none;
+    margin: 0%;
+    font: 400 1.1vmax cursive;
+    transition: all 0.5s;
+    padding: 0 1vmax;
+    color: rgba(0, 0, 0, 0.648);
+    background-color: #ffffff;
+}
+
+#createProductFormImage>input::file-selector-button:hover {
+    background-color: #ebebeb;
+}
+
+#createProductBtn {
+    border: none;
+    background-color: #1cc7d0;
+    color: white;
+    width: 100%;
+    padding: 0.8vmax;
+    font: 400 1.8vmax "Tiro Tamil";
+    border-radius: 25px;
+    transition: all 0.5s;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+#createProductBtn:hover {
+    background-color: #147277;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) and (max-width: 700px) {
+    .createProductForm {
+        padding: 5vmax;
+        width: auto;
+    }
+
+    .createProductForm>div>input,
+    .createProductForm>div>textarea,
+    .createProductForm>div>select {
+        padding: 2.5vmax 5vmax;
+        font: 300 1.7vmax cursive;
+    }
+
+    .createProductForm>div>svg {
+        font-size: 2.7vmax;
+    }
+
+    #createProductFormImage>img {
+        width: 7vmax;
+    }
+
+    #createProductFormImage>input::file-selector-button {
+        height: 7vh;
+        font: 400 1.8vmax cursive;
+    }
+
+    #createProductBtn {
+        font: 300 1.9vmax "Tiro Tamil";
+        padding: 1.8vmax;
+    }
+}

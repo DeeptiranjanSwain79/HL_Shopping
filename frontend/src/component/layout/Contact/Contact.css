@@ -1,0 +1,32 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    justify-content: space-evenly;
+}
+
+.contact > p:first-child {
+    width: 60%;
+    text-align: center;
+    font: 400 2vmax "EB Garamond";
+}
+
+.contact > p:first-child > a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.736);
+}
+
+.contact > p:last-child {
+    width: 40%;
+    text-align: center;
+    font: 400 2vmax "Poppins";
+}
+
+@media screen and (max-width: 600px) {
+    .contact > p {
+        display: flex;
+        flex-direction: column;
+    }
+}

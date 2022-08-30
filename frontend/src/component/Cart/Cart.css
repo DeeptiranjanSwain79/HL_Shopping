@@ -1,0 +1,192 @@
+.emptyCart{
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10vmax;
+    height: 70vh;
+}
+
+.emptyCart svg{
+    color: #1cc7d0;
+    font-size: 7vmax;
+}
+
+.emptyCart p{
+    font-size: 2vmax;
+    margin-bottom: 2vmax;
+}
+
+.emptyCart a{
+    background-color: #1cc7d0;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font: 400 1.15vmax "Tiro Tamil";
+    border-radius: 25vmax;
+    border: none;
+    padding: 1vmax 3vmax;
+}
+
+.cartPage {
+    padding: 5vmax;
+}
+
+.cartHeader {
+    background-color: #1cc7d0;
+    width: 90%;
+    box-sizing: border-box;
+    grid-template-columns: 4fr 1fr 1fr;
+    display: grid;
+    color: white;
+    margin: auto;
+    font: 400 1.5vmax "Tiro Tamil";
+}
+
+.cartHeader p {
+    margin: 10px;
+}
+
+.cartHeader p:last-child {
+    text-align: end;
+}
+
+.cartContainer {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+}
+
+.cartInput {
+    display: flex;
+    align-items: center;
+    height: 8vmax;
+}
+
+.cartInput button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.616);
+    cursor: pointer;
+    transition: all 0.5s;
+    color: white;
+    padding: 0.5vmax;
+}
+
+.cartInput button:hover {
+    background-color: rgba(0, 0, 0, 0.816);
+}
+
+.cartInput input {
+    border: none;
+    width: 3vmax;
+    padding: 0.5vmax;
+    text-align: center;
+    outline: none;
+    font: 400 1.5vmax "Tiro Tamil";
+    color: rgba(0, 0, 0, 0.95);
+}
+
+.cartSubtotal {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 8vmax;
+    padding: 0.5vmax;
+    color: rgba(0, 0, 0, 0.816);
+    box-sizing: border-box;
+    font: 400 1.5vmax "Poppins";
+}
+
+.cartGrossTotal {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+}
+
+.cartGrossTotalBox {
+    border-top: 3px solid #1cc7d0;
+    font: 400 1.8vmax "Poppins";
+    box-sizing: border-box;
+    margin: 4vmax;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vmax 0;
+}
+
+.checkOutBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkOutBtn button {
+    background-color: #1cc7d0;
+    color: white;
+    border: none;
+    padding: 0.8vmax 4vmax;
+    margin: 1vmax 4vmax;
+    cursor: pointer;
+    border-radius: 25px;
+    font: 400 1.38vmax "Joan";
+    width: 50%;
+}
+
+
+@media screen and (max-width: 600px) {
+    .emptyCart{
+        height: 50vh;
+    }
+    .cartPage {
+        padding: 10vmax 0;
+        min-height: 60vh;
+    }
+
+    .cartHeader {
+        width: 100%;
+        font: 400 1.7vmax "Tiro Tamil";
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr;
+    }
+
+    .cartContainer {
+        width: 100%;
+        grid-template-columns: 3fr 1fr 1fr;
+    }
+
+    .cartInput {
+        height: 20vmax;
+    }
+
+    .cartInput button {
+        padding: 1vmax;
+    }
+
+    .cartInput input {
+        width: 70%;
+        padding: 1.9vmax;
+        font: 400 1.95vmax "Poppins";
+    }
+
+    .cartSubtotal {
+        padding: 1.5vmax;
+        height: 20vmax;
+        font: 300 2.1vmax "Poppins";
+    }
+
+    .cartGrossTotal {
+        display: grid;
+        grid-template-columns: 0fr 2fr;
+    }
+
+    .cartGrossTotalBox {
+        padding: 2vmax;
+        font: 300 2vmax "Poppins";
+    }
+
+    .checkOutBtn button{
+        padding: 2vmax 4vmax;
+        font: 300 2vmax "TIro Tamil";
+        width: 100%;
+    }
+
+}

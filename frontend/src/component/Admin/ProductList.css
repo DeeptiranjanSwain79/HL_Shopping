@@ -1,0 +1,59 @@
+.productListContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    border-left: 1px solid rgba(0, 0, 0, 0.158);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#productListHeading {
+    font: 400 2rem "Tiro Tamil";
+    padding: 0.5vmax;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.637);
+    transition: all 0.5s;
+    margin: 2rem;
+    text-align: center;
+}
+
+.productListTable {
+    background-color: white;
+    border: none !important;
+}
+
+.productListTable div {
+    font: 300 1vmax "Poppins";
+    color: rgba(0, 0, 0, 0.673);
+    transition: all 0.5s;
+}
+
+.productListTable a,
+.productListTable button {
+    color: rgba(0, 0, 0, 0.527);
+    transition: all 0.5s;
+}
+
+.productListTable a:hover {
+    color: #1cc7d0;
+}
+
+.productListTable button:hover {
+    color: rgb(236, 5, 5);
+}
+
+.MuiDataGrid-columnHeader div {
+    color: rgb(255, 255, 255);
+}
+
+
+.MuiDataGrid-iconSeparator {
+    display: none !important;
+}
+
+@media screen and (max-width: 600px) {
+    .productListTable div {
+        font: 300 4vw "Poppins";
+    }
+}

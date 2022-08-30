@@ -1,0 +1,113 @@
+.productHeading {
+    margin: 2vmax auto;
+    width: 25vw;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.180);
+    color: rgba(0, 0, 0, 0.880);
+    padding: 2vmax;
+    font: 500 1.5vmax "Tiro Tamil";
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 12vmax;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.paginationBox {
+    display: flex;
+    justify-content: center;
+    margin: 6vmax;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.page-item {
+    /* background-color: #fdfcfc; */
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.180);
+    padding: 1vmax 1.5vmax;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.page-item:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.page-link {
+    text-decoration: none;
+    font: 300 0.9vmax "Poppins";
+    color: #505050;
+    transition: all 0.3s;
+}
+
+.page-item:hover {
+    background-color: #e6e6e6;
+}
+
+.page-item:hover .page-link {
+    background-color: #e6e6e6;
+}
+
+.pageItemActive {
+    background-color: #1cc7d0;
+}
+
+.filterBox {
+    width: 10vmax;
+    position: absolute;
+    top: 10vmax;
+    left: 1.5vmax;
+    overflow: hidden;
+}
+
+.categoryBox {
+    padding: 0;
+    list-style: none;
+    color: rgba(0, 0, 0, 0.7);
+    font: 300 0.9vmax "Tiro Tamil";
+    margin: 0.4vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.category-link:hover {
+    color: #1cc7d0;
+}
+
+.filterBox > fieldset {
+    border: 1px solid rgba(0, 0, 0, 0.727);
+    padding: 0.5vmax;
+}
+
+@media screen and (max-width: 600px) {
+    .filterBox {
+        width: 20vmax;
+        position: static;
+        margin: auto;
+    }
+
+    .page-link {
+        font: 300 1.1vmax "Poppins";
+    }
+
+    .category-link{
+        font: 400 1.7vmax "Poppins";
+    }
+}
+
+.css-eg0mwd-MuiSlider-thumb {
+    overflow: hidden;
+}

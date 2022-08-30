@@ -1,0 +1,211 @@
+.confirmOrderPage {
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+    overflow: hidden;
+}
+
+.confirmOrderPage div:last-child {
+    overflow-y: hidden;
+}
+
+.confirmShippingArea {
+    padding: 5vmax;
+    padding-bottom: 0%;
+}
+
+.confirmShippingArea p {
+    font: 400 1.8vmax "Joan";
+}
+
+.confirmShippingAreaBox,
+.confirmCartItemsContainer {
+    margin: 2vmax;
+}
+
+.confirmShippingAreaBox div {
+    display: flex;
+    margin: 1vmax 0;
+}
+
+.confirmShippingAreaBox div p {
+    font: 400 1vmax "Tiro Tamil";
+    color: black;
+}
+
+.confirmShippingAreaBox div span {
+    color: #575757;
+    font: 100 1vmax "Poppins";
+    margin: 0 1vmax;
+}
+
+.confirmCartItems {
+    padding: 5vmax;
+    padding-top: 2vmax;
+}
+
+.confirmCartItemsContainer {
+    max-height: 20vmax;
+    overflow-y: auto;
+}
+
+.confirmCartItemsContainer div {
+    display: flex;
+    font: 400 1vmax "Roboto";
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vmax 0;
+}
+
+.confirmCartItemsContainer div img {
+    width: 3vmax;
+}
+
+.confirmCartItemsContainer div a {
+    color: #575757;
+    margin: 0 2vmax;
+    width: 60%;
+    font: 400 1.2vmax "Tiro Tamil";
+    text-decoration: none;
+}
+
+.confirmCartItemsContainer div span {
+    font: 400 1.15vmax "Poppins";
+    color: #5e5e5e;
+}
+
+.orderSummary {
+    padding: 7vmax;
+}
+
+
+.orderSummary p {
+    font: 400 1.4vmax "Poppins";
+    padding: 1vmax;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.orderSummary div div {
+    display: flex;
+    font: 300 1vmax "Poppins";
+    justify-content: space-between;
+    margin: 2vmax 0;
+}
+
+.orderSummary div div span {
+    color: rgba(0, 0, 0, 0.69);
+    margin-top: 1.7vmax;
+    margin-left: -3vmax;
+}
+
+.orderSummaryTotal {
+    display: flex;
+    justify-content: space-between;
+    font: 400 1vmax "Poppins";
+    border-top: 1px solid rgba(0, 0, 0, 0.363);
+    padding: 2vmax 0;
+}
+
+.orderSummary button{
+    background-color: #086a58;
+    border-radius: 7px;
+    color: white;
+    width: 100%;
+    padding: 1vmax;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.5s;
+    font: 400 1.5vmax "Tiro Tamil";
+}
+
+.orderSummary button:hover{
+    background-color: #0cbe9d;
+    transform: scale(1.05);
+}
+
+@media  screen and (max-width: 600px) {
+    .confirmOrderPage {
+        grid-template-columns: 1fr;
+        height: unset;
+    }
+
+    .confirmShippingArea p {
+        font: 400 6vw "Tiro Tamil";
+    }
+
+    .confirmShippingAreaBox div {
+        display: flex;
+        margin: 6vw 0;
+    }
+
+    .confirmShippingAreaBox div p {
+        font: 400 4vw "Tiro Tamil";
+    }
+
+    .confirmShippingAreaBox div span {
+        font: 100 4vw "Poppins";
+    }
+
+    .confirmCartItems p {
+        font: 400 6vw "Tiro Tamil";
+    }
+
+    .confirmCartItemsContainer {
+        max-height: 50vw;
+    }
+
+    .confirmCartItemsContainer div {
+        font: 400 4vw "Tiro Tamil";
+        margin: 4vw 0;
+    }
+
+    .confirmCartItemsContainer div img {
+        width: 10vw;
+    }
+
+    .confirmCartItemsContainer div a {
+        margin: 0;
+        width: 30%;
+        font: 200 3.2vmax "Tiro Tamil";
+    }
+
+    .confirmCartItemsContainer div span {
+        font: 100 4vw "Poppins";
+    }
+
+    .orderSummary {
+        padding: 12vw;
+    }
+
+    .orderSummary p{
+        font: 400 6vw "Tiro Tamil";
+        padding: 4vw;
+    }
+
+    .orderSummary div div {
+        font: 300 4vw "Poppins";
+    }
+
+    .orderSummary div div span {
+        margin-left: -9vmax;
+    }
+
+    .orderSummaryTotal {
+        font: 300 4vw "Poppins";
+        padding: 5vw 0;
+    }
+
+    .orderSummaryTotal span{
+        font-family: "Poppins";
+    }
+
+    .orderSummary button {
+        padding: 4vw;
+        margin: 4vw auto;
+        font: 400 4vw "Tiro Tamil";
+    }
+}

@@ -1,0 +1,55 @@
+*{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.text-decoration-none{
+  text-decoration: none;
+}
+
+.bg-dark{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Chrome, Safari, Edge, Oprea */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+
+body {
+  cursor: url("../src/images/cursor.png"), auto;
+}
+
+.greenColor{
+  color: green !important;
+}
+
+.redColor{
+  color: red !important;
+}
+
+/* For Scroll bar */
+body::-webkit-scrollbar {
+  width: 7px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.5);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1cc;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  /* border: 3px solid white;  creates padding around scroll thumb */
+}
