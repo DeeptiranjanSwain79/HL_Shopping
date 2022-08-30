@@ -1,0 +1,296 @@
+.productDetails{
+    background-color: #fffefe;
+    width: 100vw;
+    max-width: 100%;
+    box-sizing: border-box;
+    font:500 1vmax "Tiro Tamil";
+    display: flex; 
+    text-align: center;
+}
+
+.productDetails > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2vmax;
+    box-sizing: border-box;
+}
+
+.productDetails > div:last-child{
+    align-items: flex-start;
+}
+
+.CarouselImage{
+    width: 30vmax;
+    height: 30vmax;
+}
+
+.detailsBlock-1 > h2 {
+    color: rgb(54, 54, 54);
+    font: 600 1.6vmax "EB Garamond";
+}
+
+.detailsBlock-1 > p {
+    color: rgba(54, 54, 54, 0.58);
+    font: 200 1vmax "Poppins";
+}
+
+.detailsBlock-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.258);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.258);
+    width: 70%;
+    padding: 1vmax 0;
+}
+
+.detailsBlock-3{
+    width: 70%;
+}
+
+.detailsBlock-3 > h1 {
+    color: #630404cc;
+    font: 800 2.3vmax "Poppins";
+}
+
+.detailsBlock-3-1{
+    display: flex;
+    align-items: center;
+}
+
+.detailsBlock-3-1-1 > button{
+    border: none;
+    background-color: #1cc7d0;
+    font-weight: 500;
+    font-size: 1.5vmax;
+    border-radius: 0.3vmax;
+    padding: 0.5vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.detailsBlock-3-1-1 > button:hover{
+    background-color: #05a0a8;
+}
+
+.detailsBlock-3-1-1 > input {
+    border: none;
+    padding: 0.1vmax;
+    margin-top: 0.5vmax;
+    width: 7vmax;
+    text-align: center;
+    outline: none;
+    color: rgba(0, 0, 0, 0.74);
+    font: 400 1.5vmax "Poppins";
+}
+
+.detailsBlock-3-1 > button:last-child {
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+    background-color: #1cc7d0;
+    font: 400 1.2vmax "Tiro Tamil";
+    border-radius: 20px;
+    margin-left: 2vmax;
+    padding: 0.5vmax 2vmax;
+    outline: none;
+}
+
+.detailsBlock-3-1 > button:last-child:hover{
+    transform: scale(1.05);
+    background-color: #05a0a8;
+}
+
+.detailsBlock-3 > p {
+    border-top: 1px solid rgba(0, 0, 0, 0.258);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.258);
+    padding: 1vmax 0;
+    margin: 1vmax 0;
+    font: 400 1vmax "Tiro Tamil";
+}
+
+.detailsBlock-4{
+    color: rgba(0, 0, 0, 0.897);
+    font: 800 1.2vmax "Poppins";
+    text-align: left;
+}
+
+.detailsBlock-4 > p{
+    color: rgba(0, 0, 0, 0.897);
+    font: 500 0.9vmax "Poppins";
+}
+
+.submitReview {
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+    background-color: #1cc7d0;
+    font: 400 1.2vmax "Tiro Tamil";
+    border-radius: 20px;
+    margin-left: 2vmax;
+    padding: 0.7vmax 2vmax;
+    outline: none;
+}
+
+.submitReview:hover {
+    background-color: #05a0a8;
+    transform: scale(1.1);
+}
+
+.submitDialog {
+    display: flex;
+    flex-direction: column;
+}
+
+.submitDialogTextArea {
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    margin: 1vmax 0;
+    outline: none;
+    padding: 1rem;
+    font: 300 1rem "Poppins";
+}
+
+/* Class of the stars */
+.css-dqr9h-MuiRating-label {
+    overflow: hidden;
+}
+
+.reviewHeading {
+    color: #121111;
+    font: 600 1.5vmax "Tiro Tamil";
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.258);
+    padding: 1vmax;
+    width: 20vmax;
+    margin: auto;
+    margin-bottom: 4vmax;
+}
+
+.reviews{
+    display: flex;
+    overflow: auto;
+}
+
+.reviewCard {
+    flex: none;
+    border: 1px solid #3230301e;
+    box-shadow: 0 0 5px #6563631e;
+    width: 30vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vmax;
+    padding: 3vmax;
+}
+
+.reviewCard > img {
+    width: 5vmax;
+}
+
+.reviewCard > p {
+    color: #080808;
+    font: 700 1.9vmax "Dancing Script";
+}
+
+.reviewCardComment {
+    color: #434242;
+    font: 500 1vmax "Joan";
+}
+
+.noReviews{
+    font: 400 1.3vmax "Tiro Tamil";
+    text-align: center;
+    color: #080808;
+}
+
+@media screen and (max-width: 600px){
+    .productDetails{
+        display: inline-block;
+        height: unset;
+    }
+
+    .productDetails > div:last-child {
+        align-items: center;
+    }
+
+    .detailsBlock-1 > h2 {
+        font-size: 2.8vmax;
+        text-align: center;
+    }
+    
+    .detailsBlock-1 > p {
+        font-size: 1vmax;
+        text-align: center;
+    }
+
+    .detailsBlock-2 {
+        justify-content: center;
+    }
+    
+    .detailsBlock-2 > span {
+        font-size: 1.5vmax;
+    }
+
+    .detailsBlock-3 > h1 {
+        font: 700 3vmax "Poppins";
+        text-align: center;
+    }
+    
+    .detailsBlock-3 > p {
+        font: 700 2vmax "Cormorant Garamond";
+        text-align: center;
+    }
+
+    .detailsBlock-3-1 {
+        flex-direction: column;
+    }
+
+    .detailsBlock-3-1-1 {
+        padding: 2vmax 0;
+    }
+
+    .detailsBlock-3-1-1 > button {
+        padding: 1.2vmax;
+        width: 4vmax;
+    }
+
+    .detailsBlock-3-1-1 > input {
+        padding: 1.5vmax;
+        
+        width: 9vmax;
+        font: 900 3.5vmax "Poppins";
+    }   
+
+    .detailsBlock-3-1 > p {
+        padding: 2.5vmax 0;
+        text-align: center;
+        font: 400 2vmax "Comorant Garamond";
+    }
+
+    .detailsBlock-4 {
+        font: 500 2.5vmax "Poppins";
+    }
+
+    .detailsBlock-4 > p {
+        font: 300 1.8vmax "Poppins";
+    }
+
+    .reviews{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviewCard p {
+        font-size: 2.8vmax;
+    }
+
+    .reviewCardComment {
+        font-size: 1.5vmax;
+    }
+}

@@ -1,0 +1,81 @@
+footer {
+    margin-top: 20vh;
+    padding: 2vmax;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+}
+
+.leftFooter {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leftFooter > h1 {
+    font: 500 2vmax "Tiro Tamil";
+}
+
+.leftFooter > p {
+    font: 500 2vmax "Lobster";
+}
+.leftFooter > img {
+    width: 10vmax;
+    margin: 1vmax;
+    cursor: pointer;
+}
+
+.midFooter {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font: 200 1.5vmax "Tiro Tamil";
+}
+
+.midFooter>h1 {
+    font: 600 5vmax "Dancing Script";
+    color: #1cc7d0;
+}
+
+.midFooter > p {
+    font: 600 1vmax "Tiro Tamil";
+    font-size: 87%;
+}
+
+.midFooter > p > a {
+    font: 600 1vmax "Tiro Tamil";
+    font-size: 87%;
+    color: #ffffff;
+}
+
+.rightFooter {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: 500 2vmax "Caveat";
+
+}
+
+.icon {
+    color: #f5f1f1;
+    transition: all 0.5s;
+    margin-left: 50px;
+}
+
+.icon:hover {
+    color: #1cc7d0;
+}
+
+@media screen and (max-width: 600px) {
+    .leftFooter {
+        width: 12.8vmax;
+    }
+    .midFooter{
+        padding-left: 5vmax;
+    }
+}

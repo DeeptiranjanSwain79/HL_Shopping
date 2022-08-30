@@ -1,0 +1,116 @@
+.shippingContainer {
+    margin-top: 3vmax;
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: -9vmax;
+}
+
+.shippingBox {
+    height: 90vh;
+    width: 25vw;
+    background-color: white;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+.shippingHeading {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.67);
+    font: 400 1.6vmax "Tiro Tamil";
+    width: 50%;
+    margin: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+.shippingForm {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s;
+    height: 80%;
+    padding: 2vmax;
+    margin: auto;
+}
+
+.shippingForm div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.shippingForm div input,
+.shippingForm div select {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1PX solid rgba(0, 0, 0, 0.278);
+    border-radius: 7px;
+    font: 300 1.1vmax cursive;
+    outline: none;
+}
+
+.shippingForm div svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.5vmax;
+    color: rgba(0, 0, 0, 0.63);
+}
+
+.shippingBtn {
+    border: none;
+    background-color: #0fc9a7;
+    color: white;
+    font: 400 1.3vmax "Tiro Tamil";
+    width: 100%;
+    padding: 1vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: none;
+    margin: 2vmax;
+    border-radius: 7px;
+}
+
+.shippingBtn:hover {
+    transform: scale(1.15);
+    background-color: #06dab3;
+}
+
+@media screen and (max-width: 600px) {
+    .shippingBox {
+        width: 100vw;
+        height: 95vh;
+    }
+
+    .shippingHeading {
+        font: 400 3.3vmax "TIro Tamil";
+        padding: 5vw;
+    }
+
+    .shippingForm {
+        padding: 11vw;
+    }
+
+    .shippingForm div input,
+    .shippingForm div select {
+        padding: 1.5vmax 10vw;
+        font: 300 6vw cursive;
+    }
+
+    .shippingForm div svg {
+        font-size: 3.2vmax;
+        transform: translateX(3vw);
+    }
+
+    .shippingBtn {
+        font: 400 4vw "TIro Tamil";
+        padding: 4vw;
+    }
+}

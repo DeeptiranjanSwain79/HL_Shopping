@@ -1,0 +1,159 @@
+.profileContainer {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    top: 0%;
+    left: 0%;
+    max-width: 100%;
+    background-color: white;
+    margin-bottom: -10vmax;
+}
+
+.profileContainer div {
+    display: flex;
+    width: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.profileContainer div:first-child h1 {
+    color: rgba(0, 0, 0, 0.65);
+    font: 500 2vmax "Tiro Tamil";
+    transform: translateX(11vmax) translateY(-1vmax);
+}
+
+.profileContainer div:first-child img {
+    width: 10vmax;
+    height: 10vmax;
+    border-radius: 100%;
+    margin-left: 10vmax;
+    transition: all 0.5s;
+}
+
+.profileContainer div:first-child img:hover{
+    transform: scale(1.05);
+}
+
+.profileContainer div:first-child a{
+    border: none;
+    background-color: #1cc7d0;
+    font: 400 2vmax "Joan";
+    color: white;
+    transition: all 0.5s;
+    text-decoration: none;
+    width: 30%;
+    margin-left: 7vmax;
+    margin-top: 2vmax;
+    text-align: center;
+    padding: 0.5vmax;
+}
+
+.profileContainer div:first-child a:hover{
+    background-color: #05a0a8;
+    transform: scale(1.05);
+}
+
+.profileContainer div:last-child{
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+.profileContainer div:last-child div h4{
+    color: black;
+    font: 400 1.2vmax "Tiro Tamil";
+}
+
+.profileContainer div:last-child div p{
+    color: rgba(0, 0, 0, 0.818);
+    font: 500 1.3vmax "Poppins";
+    margin: 0.05vmax;
+}
+
+.profileContainer div:last-child div:last-child{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.profileContainer div:last-child div:last-child a{
+    border: none;
+    background-color: #1cc7d0;
+    font: 400 2vmax "Joan";
+    color: white;
+    transition: all 0.5s;
+    text-decoration: none;
+    width: 90%;
+    margin-left: 7vmax;
+    margin-top: 2vmax;
+    text-align: center;
+    padding: 0.5vmax;
+}
+
+.profileContainer div:last-child div:last-child a:hover{
+    background-color: #05a0a8;
+    /* transform: scale(1.05); */
+}
+
+@media screen and (max-width: 600px) {
+    .profileContainer{
+        flex-direction: column;
+        width: 100vh;
+        align-items: center;
+        margin-bottom: -50vmax;
+    }
+
+    .profileContainer div:first-child{
+        margin-top: 10vmax;
+        display: flex;
+        flex-direction: row;
+        margin-left: -4vmax;
+    }
+
+    .profileContainer div:first-child h1{
+        display: none;
+    }
+
+    .profileContainer div:first-child img{
+        margin-left: -4vmax;
+    }
+
+    .profileContainer div:first-child a{
+        font: 500 1.5vmax "Tiro Tamil";
+        margin-top: 3vmax;
+        margin-left: 2.5vmax;
+    }
+
+    .profileContainer div:last-child div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .profileContainer div:last-child div:first-child{
+        padding-left: 4vmax;
+    }
+
+    .profileContainer div:last-child div h4{
+        font: 400 1.7vmax "Tiro Tamil";
+        color: rgba(0, 0, 0, 0.618);
+        padding-left: 5vmax;
+    }
+
+    .profileContainer div:last-child div p{
+        font: 500 2vmax "Poppins";
+        color: rgba(0, 0, 0, 0.65);
+        padding-left: 5vmax;
+    }
+
+    .profileContainer div:last-child div:last-child{
+        margin-left: -3vmax;
+    }
+
+    .profileContainer div:last-child div:last-child a{
+        font: 500 2vmax "Tiro Tamil";
+    }
+}

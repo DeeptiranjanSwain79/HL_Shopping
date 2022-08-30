@@ -1,0 +1,82 @@
+.myOrdersPage {
+    width: 100vw;
+    max-width: 100%;
+    padding: 5vmax 1vmax;
+    box-sizing: border-box;
+    background-color: rgb(235, 235, 235);
+}
+
+#myOrdersHeading {
+    text-align: center;
+    font: 400 1.2vmax "Tiro Tamil";
+    padding: 0.5vmax;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+    background-color: rgb(44, 44, 44);
+}
+
+.myOrdersTable {
+    color: white;
+}
+
+.myOrdersTable div {
+    font: 300 1.1vmax "Poppins";
+    color: rgba(0, 0, 0, 0.678);
+    border: none;
+}
+
+.myOrdersTable a {
+    color: rgba(0, 0, 0, 0.527);
+    transition: all 0.5s;
+}
+
+.myOrdersTable a:hover {
+    color: #1ff7d0;
+}
+
+.MuiDataGrid-columnHeader--sortable {
+    overflow-y: hidden;
+}
+
+.MuiDataGrid-columnHeader{
+    /* overflow-y: hidden;
+    overflow-x: auto; */
+    padding: 1vmax !important;
+    background-color: #1ff7d0;
+}
+
+.MuiDataGrid-columnHeader div {
+    color: rgb(255, 255, 255);
+    font: 500 1.1vmax "Poppins" !important;
+}
+
+.MuiDataGrid-iconSeparator {
+    display: none !important;
+}
+
+@media screen and (max-width: 600px) {
+    .myOrdersPage {
+        height: auto;
+        padding: 3vmax 2vmax;
+        width: 100%;
+    }
+
+    #myOrdersHeading {
+        font-size: 2.5vmax;
+        padding: 4vw;
+    }
+
+    .myOrdersTable div {
+        font-size: 4vw;
+    }
+
+    .MuiDataGrid-columnHeader {
+        padding: 20px !important;
+    }
+
+    .MuiDataGrid-columnHeader div {
+        font: 500 5vw "Poppins" !important;
+    }
+
+}
