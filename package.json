@@ -32,5 +32,8 @@
     "react-scripts": "^5.0.1",
     "stripe": "^10.0.0",
     "validator": "^13.7.0"
+  },
+  "engines": {
+    "node": "6.11.1"
   }
 }
